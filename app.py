@@ -13,7 +13,7 @@ app.add_url_rule('/dynamic', 'dynamic_route', dynamical_routing_test)
 # home --> form to login
 @app.route('/')
 def hello_world():
-    VERSION = 40
+    VERSION = 41
     content = f'''
       <html>
         <body>     
@@ -23,8 +23,19 @@ def hello_world():
             <p><input type = "text" name = "user_name" /></p>
             <p><input type = "submit" value = "submit" /></p>
           </form>     
+  <h1>{ VERSION }</h1>
+          <form action = { url_for("login") } method = "post">
+            <p>Enter Your Age</p>
+            <p><input type = "text" name = "user_name" /></p>
+            <p><input type = "submit" value = "submit" /></p>
+          </form>     
+
+   
         <p><a href={ url_for("dynamic_route") }>dynamic link</a></p>
-        </body>
+       
+	
+ 
+ </body>
       </html>
 '''
     return content
