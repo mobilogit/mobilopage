@@ -23,13 +23,7 @@ def hello_world():
             <p><input type = "text" name = "user_name" /></p>
             <p><input type = "submit" value = "submit" /></p>
 
-        <p>Enter Age:</p>
-            <p><input type = "text" name = "user_name" /></p>
-            <p><input type = "submit" value = "submit" /></p>
-          </form>     
-          
-
-   
+ 
         <p><a href={ url_for("dynamic_route") }>dynamic link</a></p>
        
 	
