@@ -23,7 +23,6 @@ def hello_world():
             <p><input type = "text" name = "user_name" /></p>
             <p><input type = "submit" value = "submit" /></p>
           </form>     
-  <h1>{ VERSION }</h1>
           <form action = { url_for("login") } method = "post">
             <p>Enter Your Age</p>
             <p><input type = "text" name = "user_name" /></p>
