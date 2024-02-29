@@ -22,12 +22,12 @@ def hello_world():
             <p>Enter Name:</p>
             <p><input type = "text" name = "user_name" /></p>
             <p><input type = "submit" value = "submit" /></p>
-          </form>     
-          <form action = { url_for("login") } method = "post">
-            <p>Enter Your Age</p>
+
+        <p>Enter Age:</p>
             <p><input type = "text" name = "user_name" /></p>
             <p><input type = "submit" value = "submit" /></p>
           </form>     
+          
 
    
         <p><a href={ url_for("dynamic_route") }>dynamic link</a></p>
